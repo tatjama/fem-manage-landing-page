@@ -1,0 +1,13 @@
+@font-face{
+    font-family: "beVietnam";
+    src: url("./fonts/Be_Vietnam/BeVietnam-Regular.ttf");
+}
+body, .container{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: "beVietnam";
+}
+button{
+    color: red;
+}
