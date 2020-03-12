@@ -8,6 +8,18 @@ body, .container{
     overflow-x: hidden;
     font-family: "beVietnam";
 }
+section{
+    display: flex;
+    flex-direction: row;
+}
 button{
     color: red;
+}
+.section-one.left{
+    background-color: yellow;
+    width: 50%
+}
+.section-one.right{
+    background-image: url('./images/bg-simplify-section-desktop.svg');
+    width: 50%;
 }
