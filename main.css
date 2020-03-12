@@ -15,11 +15,11 @@ section{
 button{
     color: red;
 }
-.section-one.left{
+.left{
     background-color: yellow;
     width: 50%
 }
-.section-one.right{
+.right{
     background-image: url('./images/bg-simplify-section-desktop.svg');
     width: 50%;
 }
