@@ -7,7 +7,7 @@ body, .container{
     box-sizing: border-box;
     overflow-x: hidden;
     font-family: "beVietnam";
-    font-size: 18px;    
+    font-size: 16px;    
     width: 1440px;  
     color: hsl(228, 39%, 23%); 
 }
@@ -125,7 +125,7 @@ li:nth-child(3)::before{
 li p{
     padding-left: 100px;
     font-size: 1rem;
-    width: 430px;
+    width: 440px;
 }
 .section-three{
     text-align: center;
@@ -153,8 +153,8 @@ h3{
     margin: 50px 20px;  
 }
 .slide p{
-    width: 450px;
-    padding:0px 40px;
+    width: 460px;
+    padding:0px 50px;
     font-size: 1rem;    
 }
 
