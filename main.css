@@ -59,6 +59,7 @@ button{
 button:hover{
     opacity: 0.8;
 }
+
 h1{  
     font-size: 3rem;     
 }
@@ -77,10 +78,9 @@ section{
     position: relative;  
     padding-left: 160px;
     padding-right: 140px; 
-    padding-top: 85px; 
-    
+    padding-top: 85px;     
 }
-.left{
+.left, .right{
     width: 50%;       
 }
 .two-bg{
@@ -92,10 +92,7 @@ section{
 .content{
     width: 450px;    
 }
-.right{   
-    width: 50%;       
-    box-sizing: border-box;
-}
+
 ul{
     list-style: none;
     margin: 50px 0px;
@@ -127,10 +124,11 @@ li p{
     font-size: 1rem;
     width: 440px;
 }
-.section-three{
-    text-align: center;
+.section-three{  
+    display: flex;
+    flex-direction: column;    
     margin-top: 300px;
-
+    align-items: center;
 }
 .slide img{
     height: 100px;
@@ -145,6 +143,8 @@ h3{
     flex-direction: row;
     flex-wrap: nowrap;
     overflow-x: scroll;
+    position: relative;
+    left: 360px;
 }
 .slide{
     width: 40%;
@@ -157,7 +157,6 @@ h3{
     padding:0px 50px;
     font-size: 1rem;    
 }
-
 .section-four{
     background-color: hsl(12, 88%, 59%);
     background-image: url("./images/bg-simplify-section-desktop.svg");
@@ -165,7 +164,7 @@ h3{
     background-position-x: 280px;
     background-repeat: no-repeat;
     color: hsl(0, 0%, 98%); 
-    height: 230px;
+   /* height: 230px;*/
     padding-top: 0px; 
     margin-top: 200px; 
 }
@@ -183,7 +182,6 @@ footer{
     color:hsl(0, 0%, 98%);
     height: fit-content;
 }
-
 footer a{
     color:hsl(0, 0%, 98%);
     padding: 6px;      
@@ -206,8 +204,7 @@ img svg path:hover{
 }
 footer p, footer button{
     font-size: 0.8rem;
-    font-weight: lighter;  
-      
+    font-weight: lighter;        
 }
 input{
     border-radius: 25px;
@@ -229,4 +226,32 @@ input{
     color: hsl(12, 88%, 59%);
     position: relative;
     top: -20px;
+}
+@media screen and (max-width: 375px){
+    nav, section, footer{
+        flex-direction: column;
+    }
+    /*nav div, footer div{
+        width: 100%;
+    }*/
+    .section-one{
+        flex-direction: column-reverse;
+    }
+    .left, .right{
+        width: 100%;
+    }
+    .section-two{
+        flex-direction:column;
+    }
+    .section-three{
+        display: flex;
+        flex-direction: column;
+    }
+    .slider{
+        flex-direction: column;
+        left: 0px;
+    }
+    .slide{
+        width: 100%;
+    }
 }
