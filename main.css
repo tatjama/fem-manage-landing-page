@@ -254,4 +254,7 @@ input{
     .slide{
         width: 100%;
     }
+    footer{
+        flex-direction: column-reverse;
+    }
 }
