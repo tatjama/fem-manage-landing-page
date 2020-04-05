@@ -246,12 +246,10 @@ input{
     }
     .nav-menu, .nav-button{
         display: none;
-    }
-    
+    }    
     .nav-bg-mobile{
         width: 450px;
-        height: auto;
-       
+        height: auto;       
     }
     #nav-bg-mobile{
         width: 100%;
@@ -266,15 +264,29 @@ input{
         display: inherit;
         position: relative;
         top:-290px;
-        left: 260px;
-        
+        left: 260px;        
     }
+    /****SECTION ONE***/    
     .section-one{
         flex-direction: column-reverse;
         width:100%;
     }
     .left, .right{
         width: 100%;
+    }
+    .content{
+        width: 90%;
+    }
+    h1{
+        font-size: 2.5rem;
+        margin: 0px;
+    }
+    p{
+        width: 325px;
+        font-size: medium;
+    }
+    button{
+        margin: 20px 80px;
     }
     .section-one-svg{
         width:330px;
