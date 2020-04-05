@@ -107,7 +107,7 @@ li{
 }
 li::before{
     content: "01";
-    margin-right: 38px;
+    margin-right: 138px;
     background-color: hsl(12, 88%, 59%);
     border-radius: 25px;  
     width: 80px;
@@ -139,7 +139,8 @@ li p{
     top: -50px;
 }
 h3{
-    margin: 0px;
+    margin-left: -100px;
+    display: inline-block;
 }
 .slider{
     display: flex;
@@ -167,7 +168,6 @@ h3{
     background-position-x: 280px;
     background-repeat: no-repeat;
     color: hsl(0, 0%, 98%); 
-   /* height: 230px;*/
     padding-top: 0px; 
     margin-top: 200px; 
 }
@@ -294,12 +294,11 @@ input{
     h2{
         font-size: 2rem;
     }
+
     .section-two{
         flex-direction:column;
     }
-    .two-bg{
-        
-        
+    .two-bg{        
         position: absolute;
         top: -350px;
         left: 250px;
@@ -308,9 +307,29 @@ input{
         width: 400px;
         height: auto;
     }
+   
+    li{
+        padding-left: 0px;
+    }
+    li h3{
+        font-size: 0.9rem;
+        margin-left: 0px;
+        background-color:hsl(12, 88%, 59%, 7%);
+        padding: 6px 90px 6px 30px;
+        margin-right: -80px;
+    }
+    li::before{
+        margin-right: -10px;
+    }
+    li p{
+        width: 310px;
+        font-size: 0.8rem;
+        padding-left: 0px;
+    }
     .section-three{
         display: flex;
         flex-direction: column;
+        margin-top: 0px;
     }
     .slider{
         flex-direction: column;
