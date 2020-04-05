@@ -45,6 +45,9 @@ a:hover{
     top:220px;
     left:350px;
 }
+.nav-hamburger{
+display: none;
+}
 button{
     color: hsl(0, 0%, 98%);
     padding: 15px 35px;    
@@ -228,26 +231,15 @@ input{
     top: -20px;
 }
 @media screen and (max-width: 375px){
-    body{
+    body, .container{
         width: 100%;
-    }
-    .container{
-        width:100%;
-    }
-    .content{
-        width:100%;
-    }
-    p{
-    
-    }
+    }          
  section, footer{
         flex-direction: column;
-        padding: 25px;
-        width:100%;
+        padding: 25px;         
     }
  nav{
-     padding: 30px;
-     width: 100%;
+     padding: 30px;     
  }   
     .nav-img-logo{
         width:110px;
@@ -255,24 +247,27 @@ input{
     .nav-menu, .nav-button{
         display: none;
     }
+    
+    .nav-bg-mobile{
+        width: 450px;
+        height: auto;
+       
+    }
+    #nav-bg-mobile{
+        width: 100%;
+        height: auto;
+    }
     .nav-bg{
         position: relative;
-        top : -450px;
-        left: -50px;
-        width: 100px;
+        top: -170px;
+        right: 70px;
     }
-    .nav-bg svg rect{
-        width : 250px;       
-        
-    }
-
-    .nav-hamburger{
-        background-color: lawngreen;
-        z-index:3;
+    .nav-hamburger{        
+        display: inherit;
         position: relative;
-        top:-500px;
-        padding: 0%;
-        margin: 0%;
+        top:-290px;
+        left: 260px;
+        
     }
     .section-one{
         flex-direction: column-reverse;
