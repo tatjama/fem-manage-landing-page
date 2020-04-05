@@ -228,17 +228,61 @@ input{
     top: -20px;
 }
 @media screen and (max-width: 375px){
-    nav, section, footer{
-        flex-direction: column;
-    }
-    /*nav div, footer div{
+    body{
         width: 100%;
-    }*/
+    }
+    .container{
+        width:100%;
+    }
+    .content{
+        width:100%;
+    }
+    p{
+    
+    }
+ section, footer{
+        flex-direction: column;
+        padding: 25px;
+        width:100%;
+    }
+ nav{
+     padding: 30px;
+     width: 100%;
+ }   
+    .nav-img-logo{
+        width:110px;
+    }
+    .nav-menu, .nav-button{
+        display: none;
+    }
+    .nav-bg{
+        position: relative;
+        top : -450px;
+        left: -50px;
+        width: 100px;
+    }
+    .nav-bg svg rect{
+        width : 250px;       
+        
+    }
+
+    .nav-hamburger{
+        background-color: lawngreen;
+        z-index:3;
+        position: relative;
+        top:-500px;
+        padding: 0%;
+        margin: 0%;
+    }
     .section-one{
         flex-direction: column-reverse;
+        width:100%;
     }
     .left, .right{
         width: 100%;
+    }
+    .section-one-svg{
+        width:330px;
     }
     .section-two{
         flex-direction:column;
