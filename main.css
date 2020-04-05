@@ -286,13 +286,27 @@ input{
         font-size: medium;
     }
     button{
-        margin: 20px 80px;
+        margin: 20px 95px;
     }
     .section-one-svg{
         width:330px;
     }
+    h2{
+        font-size: 2rem;
+    }
     .section-two{
         flex-direction:column;
+    }
+    .two-bg{
+        
+        
+        position: absolute;
+        top: -350px;
+        left: 250px;
+    }
+    .two-bg img{
+        width: 400px;
+        height: auto;
     }
     .section-three{
         display: flex;
