@@ -40,10 +40,10 @@ a:hover{
     right:100px;
     top: -250px;
 }
-.nav-button{
-    position: absolute;
-    top:220px;
-    left:350px;
+.nav-button{    
+    position: relative;
+    top: -600px;
+    left: 350px;
 }
 .nav-hamburger{
 display: none;
@@ -145,8 +145,8 @@ h3{
 .slider{
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    overflow-x: auto;
+    
+    overflow-x: scroll;
     position: relative;
     left: 360px;
 }
@@ -294,10 +294,6 @@ input{
     h2{
         font-size: 2rem;
     }
-
-    .section-two{
-        flex-direction:column;
-    }
     .two-bg{        
         position: absolute;
         top: -350px;
@@ -306,8 +302,7 @@ input{
     .two-bg img{
         width: 400px;
         height: auto;
-    }
-   
+    }   
     li{
         padding-left: 0px;
     }
@@ -315,7 +310,7 @@ input{
         font-size: 0.9rem;
         margin-left: 0px;
         background-color:hsl(12, 88%, 59%, 7%);
-        padding: 6px 90px 6px 30px;
+        padding: 6px 88px 6px 30px;
         margin-right: -80px;
     }
     li::before{
@@ -326,24 +321,31 @@ input{
         font-size: 0.8rem;
         padding-left: 0px;
     }
-    .section-three{
-        display: flex;
-        flex-direction: column;
+    .section-three{       
         margin-top: 0px;
     }
     .slider{
+        
         -webkit-overflow-scrolling: touch;
         left: 185px;
         
     }
     .slide{
        width: 375px;
+       scroll-snap-type: mandatory;
        margin: 50px 0px;
     }
     .slide p{
         font-size: 0.8rem;
-        width: 270px;
-        
+        width: 270px;        
+    }
+    .section-four{
+        margin-top: 50px;
+        text-align: center;
+        padding-top: 50px;
+    }
+    .section-four button{
+        margin-left: 80px;
     }
     footer{
         flex-direction: column-reverse;
