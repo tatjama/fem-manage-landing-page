@@ -332,11 +332,16 @@ input{
         margin-top: 0px;
     }
     .slider{
-        flex-direction: column;
-        left: 0px;
+        
+        left: 220px;
     }
     .slide{
-        width: 100%;
+       width: 100%;
+    }
+    .slide p{
+        font-size: 0.8rem;
+        width: 270px;
+        
     }
     footer{
         flex-direction: column-reverse;
