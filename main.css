@@ -181,9 +181,9 @@ h3{
     text-align: right;
 }
 footer{    
-    background-color:hsl(233, 12%, 13%);
+    background-color: hsl(233, 12%, 13%);
     color:hsl(0, 0%, 98%);
-    height: fit-content;
+    height: fit-content;    
 }
 footer a{
     color:hsl(0, 0%, 98%);
@@ -343,6 +343,11 @@ input{
         margin-top: 50px;
         text-align: center;
         padding-top: 50px;
+        
+        background-image: url("./images/bg-simplify-section-mobile.svg");
+        
+        background-position-x: 0px;
+        background-position-y: 0px;
     }
     .section-four button{
         margin-left: 80px;
