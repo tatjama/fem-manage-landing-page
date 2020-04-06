@@ -333,10 +333,12 @@ input{
     }
     .slider{
         
-        left: 220px;
+        left: -185px;
+        
     }
     .slide{
-       width: 100%;
+       width: 375px;
+       margin: 50px 0px;
     }
     .slide p{
         font-size: 0.8rem;
