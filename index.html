@@ -7,11 +7,15 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" type="text/css" href="main.css">
   <title>Frontend Mentor | Manage landing page</title>
-  <script style="text/js" src="./js/openMenu.js"></script>
+  <script rel="text/js" src="./js/openMenu.js"></script>
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution { font-size : 11px;
+                   text-align: center; 
+                  }
+    .attribution a {
+                   color: hsl(228, 45%, 44%); 
+      }
   </style>
 </head>
 <body>
@@ -38,20 +42,14 @@
         <div onclick="openMenu()" class="nav-hamburger" >
           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="18"><g fill="#242D52" fill-rule="evenodd"><path d="M0 0h25v4H0zM0 7h25v4H0zM0 14h25v4H0z"/></g></svg>
         </div>
-        <div class="nav-close">
+        <div onclick="closeMenu()" class="nav-close">
           <img src="./images/icon-close.svg">
         </div>
       </div>
       <div class="nav-bg-menu"></div>
     </nav>
     <script>
-      function openMenu(){
-        document.querySelector('.nav-hamburger').style.display = 'none';
-        document.querySelector('.nav-close').style.display = 'initial';
-        document.querySelector('.nav-menu').style.display = 'initial';
-        document.querySelector('.section-one-svg').style.visibility = 'hidden';
-        document.querySelector('.nav-bg-menu').style.display = 'initial';
-      }
+      
     </script>
     <!---SECTIONS-->
     <section class="section-one">
