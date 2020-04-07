@@ -39,7 +39,7 @@
         <button class="nav-button">
           Get Started
         </button>
-        <div onclick="openMenu()" class="nav-hamburger" >
+        <div onclick="openMenu()" class="nav-hamburger"  >
           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="18"><g fill="#242D52" fill-rule="evenodd"><path d="M0 0h25v4H0zM0 7h25v4H0zM0 14h25v4H0z"/></g></svg>
         </div>
         <div onclick="closeMenu()" class="nav-close">
@@ -49,6 +49,14 @@
       <div class="nav-bg-menu"></div>
     </nav>
     <script>
+      function closeMenu(){
+        document.querySelector('.nav-hamburger').style.display = "initial";
+        document.querySelector('.nav-close').style.display = 'none';
+        document.querySelector('.nav-bg-menu').style.display = 'none';
+        document.querySelector('.nav-menu').style.display = 'none';
+        document.querySelector('.section-one-svg').style.visibility = 'visible';
+
+      }
       
     </script>
     <!---SECTIONS-->

@@ -239,6 +239,7 @@ input{
     position: relative;
     top: -20px;
 }
+
 @media screen and (max-width: 375px){
     body, .container{
         width: 100%;
@@ -263,7 +264,8 @@ input{
         position: absolute;
         top: 80px;
         left: 40px;
-        z-index: 3;       
+        z-index: 3; 
+              
     }
     .nav-bg-menu{
         position: absolute;
@@ -415,3 +417,4 @@ input{
         left: 50px;
     }
 }
+
