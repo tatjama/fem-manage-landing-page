@@ -377,7 +377,10 @@ input{
         width: 10px;
         height: 10px;
         border-radius: 50%;
-        background-color: lawngreen;
+        border: 2px solid hsl(12, 88%, 59%);
+    }
+    .active{
+        background-color: hsl(12, 88%, 59%);
     }
     .slide{
        width: 375px;      
