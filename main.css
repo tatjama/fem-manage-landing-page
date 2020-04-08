@@ -358,15 +358,12 @@ input{
     .section-three{       
         margin-top: 0px;
     }
-    .slider{
-        
-        -webkit-overflow-scrolling: touch;
-        left: 185px;
-        
+    .slider{          
+        left: 185px;  
+        transition: 2s;      
     }
     .slide{
-       width: 375px;
-       scroll-snap-type: mandatory;
+       width: 375px;      
        margin: 50px 0px;
     }
     .slide p{
@@ -376,10 +373,8 @@ input{
     .section-four{
         margin-top: 50px;
         text-align: center;
-        padding-top: 50px;
-        
-        background-image: url("./images/bg-simplify-section-mobile.svg");
-        
+        padding-top: 50px;        
+        background-image: url("./images/bg-simplify-section-mobile.svg");        
         background-position-x: 0px;
         background-position-y: 0px;
     }

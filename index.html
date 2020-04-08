@@ -48,17 +48,7 @@
       </div>
       <div class="nav-bg-menu"></div>
     </nav>
-    <script>
-      function closeMenu(){
-        document.querySelector('.nav-hamburger').style.display = "initial";
-        document.querySelector('.nav-close').style.display = 'none';
-        document.querySelector('.nav-bg-menu').style.display = 'none';
-        document.querySelector('.nav-menu').style.display = 'none';
-        document.querySelector('.section-one-svg').style.visibility = 'visible';
-
-      }
-      
-    </script>
+    
     <!---SECTIONS-->
     <section class="section-one">
       <div class="left">
@@ -124,8 +114,15 @@
       <div>
         <h2>What they’ve said</h2>
       </div>
-      <div class="slider">
+      <script>
+       
+        function slider(){
         
+         document.querySelector('.slider').style.left = '-185px';
+         
+        }
+      </script>
+      <div class="slider" onclick="slider()">        
         <div class="slide">
         <img src="./images/avatar-anisha.png">
         <h3>Anisha Li</h3>
@@ -143,8 +140,7 @@
         </p>
         </div>
         <div class="slide">
-          <img src="./images/avatar-richard.png"/>
-          
+          <img src="./images/avatar-richard.png"/>          
         <h3>Richard Watts</h3>
         <p>
           “Manage allows us to provide structure and process. It keeps us organized 
