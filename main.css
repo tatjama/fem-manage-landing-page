@@ -141,6 +141,7 @@ li p{
     flex-direction: column;    
     margin-top: 150px;
     align-items: center;
+    
 }
 .slide img{
     height: 100px;
@@ -152,15 +153,19 @@ h3{
     display: inline-block;
 }
 .slider{
-    display: flex;
-    flex-direction: row;
-    
-    overflow-x: scroll;
+    display: flex;   
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    height: 345px;
+    width: 1465px;    
     position: relative;
-    left: 360px;
+    left: -105px;
+}
+.slider-dots{
+    display: none;
 }
 .slide{
-    width: 40%;
+    width: 550px;
     background-color: hsl(0, 0%, 98%);
     text-align: center;
     margin: 50px 20px;  
@@ -243,6 +248,7 @@ input{
 @media screen and (max-width: 375px){
     body, .container{
         width: 100%;
+        overflow-x: hidden;
     }          
  section, footer{
         flex-direction: column;
@@ -360,7 +366,18 @@ input{
     }
     .slider{          
         left: 185px;  
-        transition: 2s;      
+        transition: 2s; 
+        overflow-x: hidden;     
+    }
+    .slider-dots{
+        display: initial;
+    }
+    .dot{
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: lawngreen;
     }
     .slide{
        width: 375px;      
