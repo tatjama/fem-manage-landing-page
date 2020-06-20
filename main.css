@@ -248,7 +248,7 @@ input{
     top: -20px;
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 420px){
     body, .container{
         width: 100%;
         overflow-x: hidden;
